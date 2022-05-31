@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nickname: MyString
+  local: MyString
+  brand: MyString
+  model: MyString
+
+two:
+  nickname: MyString
+  local: MyString
+  brand: MyString
+  model: MyString
