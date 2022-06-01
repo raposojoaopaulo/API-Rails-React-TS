@@ -2,7 +2,7 @@ class Api::V1::ConsumerUnitsController < ApplicationController
   before_action :set_consumer_unit, only: %i[show update destroy]
 
   def index
-    @consumer_units = ConsumerUnit.all
+    @consumer_units = ConsumerUnit.order(:created_at => :desc)
     render json: @consumer_units
   end
 
@@ -35,12 +35,7 @@ class Api::V1::ConsumerUnitsController < ApplicationController
   private
 
   def consumer_unit_params
-    params.require(:consumer_unit).permit(
-      :nickname,
-      :local,
-      :brand,
-      :model,
-    )
+    params.require(:consumer_unit).permit(:nickname, :local, :brand, :model)
   end
 
   def set_consumer_unit
