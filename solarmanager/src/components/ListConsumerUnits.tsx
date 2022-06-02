@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from './ListConsumerUnits.module.css'
 
 type ConsumerUnitsProps = {
   id: number;
@@ -10,18 +11,30 @@ type ConsumerUnitsProps = {
 
 function ListConsumerUnits({ consumerUnits }: { consumerUnits: ConsumerUnitsProps[] }) {
   return (
-    <div>
-      <ul>
-        {consumerUnits.map(consumerUnit => (
-          <li key={consumerUnit.id}>
-            {consumerUnit.id} - {consumerUnit.nickname}
-            {consumerUnit.local}
-            {consumerUnit.brand}
-            {consumerUnit.model}
-          </li>
-        ))}
-      </ul>
-    </div>
+    <>
+      <table className={styles.listTable}>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nickname</th>
+            <th>Local</th>
+            <th>Brand</th>
+            <th>Model</th>
+          </tr>          
+        </thead>
+        <tbody>
+          {consumerUnits.map(consumerUnit => (
+            <tr key={consumerUnit.id}>
+              <td>{consumerUnit.id}</td>
+              <td>{consumerUnit.nickname}</td>
+              <td>{consumerUnit.local}</td>
+              <td>{consumerUnit.brand}</td>
+              <td>{consumerUnit.model}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </>
   )
 }
 

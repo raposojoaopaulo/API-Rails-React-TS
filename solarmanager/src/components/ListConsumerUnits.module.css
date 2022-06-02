@@ -1,0 +1,22 @@
+.listTable {
+  width: 70%;
+  border-collapse: collapse;  
+  border-spacing: 0;
+  margin: 0 auto;
+  margin-left: 300px;
+}
+
+.listTable td {
+  background-color: #f7f7f7;
+  padding: 2em;
+}
+
+.listTable thead {  
+  border-bottom: 1px solid #ddd;
+}
+
+.listTable thead th {
+  padding: 1em;
+  text-align: center;
+  font-weight: bold;
+}

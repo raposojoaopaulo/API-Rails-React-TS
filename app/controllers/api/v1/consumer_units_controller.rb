@@ -2,7 +2,7 @@ class Api::V1::ConsumerUnitsController < ApplicationController
   before_action :set_consumer_unit, only: %i[show update destroy]
 
   def index
-    @consumer_units = ConsumerUnit.order(:created_at => :desc)
+    @consumer_units = ConsumerUnit.order(:created_at => :asc)
     render json: @consumer_units
   end
 
