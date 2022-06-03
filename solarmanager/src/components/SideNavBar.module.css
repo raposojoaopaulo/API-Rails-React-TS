@@ -24,7 +24,7 @@
   width: 70%;
   height: 55px;  
   background-color: #fff;
-  color: rgb(80, 80, 80);
+  color: #505050;
   padding: .7em 1.2em;
   text-decoration: none;
   transition: .5s;
@@ -36,6 +36,6 @@
 }
 
 .sidebar button:hover {
-  background: rgb(25, 212, 150);;
+  background: #19D496;;
   color: #fff;
 }

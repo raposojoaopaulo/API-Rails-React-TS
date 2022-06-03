@@ -20,3 +20,30 @@
   text-align: center;
   font-weight: bold;
 }
+
+.buttonContainer {
+  padding-right: 7em;
+  text-align: right;
+  margin-top: 20px;
+}
+
+.buttonContainer button {
+  align-self: baseline;
+  width: 250px;
+  height: 55px;  
+  background-color: #61dafb;
+  color: #505050;
+  padding: .7em 1.2em;
+  text-decoration: none;
+  transition: .5s;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+  transition: .5s;
+}
+
+.buttonContainer button:hover {
+  background: #55FAC3;
+}
