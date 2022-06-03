@@ -7,6 +7,7 @@ import ConsumerUnits from './components/ConsumerUnits';
 import SideNavBar from './components/SideNavBar';
 import Dashboard from './components/Dashboard';
 import GenerationRecord from './components/GenerationRecord';
+import ConsumerUnitForm from './components/ConsumerUnitForm';
 
 //css
 import './App.css';
@@ -21,6 +22,7 @@ function App() {
         <Route path="/generationrecord" element={<GenerationRecord />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/consumerunits" element={<ConsumerUnits />} />
+        <Route path="/consumerunits/new" element={<ConsumerUnitForm />} />
       </Routes>
     </div>
   </Router>

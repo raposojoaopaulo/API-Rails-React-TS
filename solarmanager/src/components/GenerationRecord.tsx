@@ -3,7 +3,7 @@ import React from 'react'
 function GenerationRecord() {
   return (
     <div>
-      <h1>Generation Record</h1>
+      <h2>Generation Record</h2>
     </div>
   )
 }

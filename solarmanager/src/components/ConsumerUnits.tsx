@@ -2,7 +2,6 @@ import React from 'react'
 import { useConsumerUnits } from '../hooks'
 import { useEffect } from 'react';
 import ListConsumerUnits from './ListConsumerUnits';
-import ConsumerUnitForm from './ConsumerUnitForm';
 
 function Consumer_Units() {
 
@@ -14,9 +13,8 @@ function Consumer_Units() {
 
   return (
     <div>
-      <h1>Consumer Units</h1>
+      <h2>Consumer Units</h2>
       <ListConsumerUnits consumerUnits={consumerUnits} />
-      <ConsumerUnitForm />
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './ListConsumerUnits.module.css'
+import { Link } from 'react-router-dom'
 
 type ConsumerUnitsProps = {
   id: number;
@@ -34,6 +35,11 @@ function ListConsumerUnits({ consumerUnits }: { consumerUnits: ConsumerUnitsProp
           ))}
         </tbody>
       </table>
+      <div className={styles.buttonContainer}>
+        <Link to="/consumerunits/new">
+          <button>Add new consumer unit</button>
+        </Link>
+      </div>
     </>
   )
 }
