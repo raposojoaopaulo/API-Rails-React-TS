@@ -1,5 +1,6 @@
 import react, { useCallback, useState, ChangeEvent, FormEvent, useEffect } from 'react'
 import { useNavigate } from 'react-router'
+import { success } from "../helpers/Notifications";
 import styles from './ConsumerUnitForm.module.css'
 import { IConsumerUnits } from '../interfaces'
 import { useConsumerUnits } from '../hooks/useConsumerUnits'
@@ -18,7 +19,7 @@ function ConsumerUnitForm() {
   const addConsumerUnit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     createConsumerUnit({ nickname, local, brand, model });
-    window.alert('Consumer Unit added');
+    success('Consumer Unit added');
     navigate('/consumerunits');
   }
 
